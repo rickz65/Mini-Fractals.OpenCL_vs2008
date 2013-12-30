@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ControlPanel</class>
+ <widget class="QMainWindow" name="ControlPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ok</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>251</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>These are the Control Panel Settings that make all the action and Fun happen</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_Main">
+     <attribute name="title">
+      <string>Main</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_Color">
+     <attribute name="title">
+      <string>Color</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_Calc">
+     <attribute name="title">
+      <string>Calc</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_Fun">
+     <attribute name="title">
+      <string>Fun</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_Misc">
+     <attribute name="title">
+      <string>Misc</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>240</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Main</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuColors">
+    <property name="title">
+     <string>Color</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuInteration">
+    <property name="title">
+     <string>Calc</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFun">
+    <property name="title">
+     <string>Fun</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuMisc">
+    <property name="title">
+     <string>Misc</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuColors"/>
+   <addaction name="menuInteration"/>
+   <addaction name="menuFun"/>
+   <addaction name="menuMisc"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
